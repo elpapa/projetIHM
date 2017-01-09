@@ -11,12 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'there';
+        this.title = 'My first angular2-google-maps project';
+        this.lat = 51.678418;
+        this.lng = 7.809007;
     }
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'my-app',
-            templateUrl: 'app/app.component.html'
+            templateUrl: 'app.component.html',
+            styleUrls: ['app.component.css'],
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
