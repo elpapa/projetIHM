@@ -3,7 +3,6 @@ import { Http ,Response, Headers, RequestOptions } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 
 import { Point } from './point';
-import { POINTS } from './mock-points';
 
 @Injectable()
 export class VelibService {
@@ -25,8 +24,8 @@ export class VelibService {
 
   private extractData(res: Response) {
     let body = res.json();
-    console.log(body);
-    return body.data || { };
+    console.log("body : ",  body);
+    return body || { };
   }
 
   private handleError (error: Response | any) {

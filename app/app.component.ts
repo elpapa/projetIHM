@@ -16,17 +16,19 @@ import './rxjs-operators';
 export class AppComponent implements OnInit {
 
   title: string = 'My first angular2-google-maps project';
-  points: Point[];
+  points: Array<any>;
 
   constructor(private velibService: VelibService) {}
 
   getPoints(): void {
     this.velibService.getPoints()
         .subscribe(points => this.points = points);
+
   }
 
   ngOnInit(): void {
     this.getPoints();
+    console.log("points : ", this.points);
   }
 
 }
