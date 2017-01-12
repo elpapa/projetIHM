@@ -1,9 +1,8 @@
-/*export class Point {
+export class Point {
   number: number;
   name: string;
   address: string;
-  lat: number;
-  lng: number;
+  position: Position;
   banking: boolean;
   bonus: boolean;
   status: string;
@@ -12,8 +11,9 @@
   available_bike_stands: number;
   available_bikes: number;
   last_update: number;
-}*/
-export class Point {
+}
+
+export class Position {
   lat: number;
   lng: number;
 }
